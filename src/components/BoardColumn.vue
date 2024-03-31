@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
 defineProps<{ title: string }>()
 </script>
 
@@ -10,5 +12,10 @@ defineProps<{ title: string }>()
             <font-awesome-icon class="text-teal-300 cursor-pointer" icon="plus" />
         </div>
         <slot></slot>
+        
+        <div class="flex cursor-pointer items-center gap-1 font-bold text-gray-300">
+            <font-awesome-icon class=" text-gray-300" icon="plus" />
+            <p>NOVA TASK</p>
+        </div>
     </div>
 </template>
